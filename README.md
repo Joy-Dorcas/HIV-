@@ -1,107 +1,162 @@
-# HIV
+# Kenya HIV Insight Project
 
-# 🦠 Kenya HIV Divide: Data-Driven Insights for Equitable Health Access
+## Overview
 
-This project analyzes HIV treatment, burden, and mortality data across Kenya to uncover disparities in antiretroviral therapy (ART) coverage, access to care, and epidemiological hotspots. Built on robust data analysis and visualizations hosted on [Lovable](https://lovable.africa) (or your analysis platform), this initiative empowers stakeholders with actionable insights toward achieving the **UNAIDS 95-95-95 targets** by 2030.
+The Kenya HIV Insight Project is a comprehensive data analysis and visualization platform designed to provide actionable insights into Kenya's HIV epidemic. This project leverages multiple data sources to present key epidemiological indicators, treatment outcomes, and demographic patterns related to HIV/AIDS in Kenya.
 
-## 🔍 Problem Statement
+## Project Objectives
 
-Kenya has made progress in the fight against HIV/AIDS, but regional disparities in HIV burden, treatment access, and outcomes persist. Rural and underserved counties face challenges in reaching people living with HIV (PLHIV), initiating ART, and retaining patients in care.
+- Analyze HIV prevalence trends across different demographic groups and geographic regions
+- Monitor treatment outcomes and antiretroviral therapy (ART) coverage
+- Identify high-risk populations and geographic hotspots
+- Support evidence-based decision making for HIV prevention and treatment programs
+- Visualize complex epidemiological data for stakeholders and policymakers
 
-Using detailed county-level data, this project:
+## Data Sources
 
-- Maps ART distribution and HIV-related mortality
-- Highlights vulnerable populations (youth, children, women)
-- Tracks progress toward national and global HIV control targets
-- Supports data-driven decision-making in health policy and program planning
+This analysis incorporates data from several authoritative sources:
 
----
+- **Kenya Population-based HIV Impact Assessment (KENPHIA)** - National household survey data (2018-2019)
+- **Kenya AIDS Indicator Surveys (KAIS)** - Historical trend data (2007, 2012)
+- **District Health Information Software-2 (DHIS2)** - National health facility reporting system
+- **National Data Warehouse (NDW)** - Electronic medical records from HIV care facilities
+- **Kenya National AIDS Control Council (NACC)** - Strategic planning and policy documents
+- **Ministry of Health (MOH)** - Official health statistics and surveillance data
 
-## 🎯 Project Objectives
+## Key Features
 
-- 🗺️ Visualize HIV burden and ART access across all Kenyan counties
-- 📍 Identify treatment deserts and underserved areas
-- 📊 Assess ART coverage among children, adolescents, and adults
-- ⚰️ Analyze HIV-related mortality by age group and region
-- 🚸 Highlight gaps in pediatric and adolescent care
-- 📈 Monitor progress toward 95-95-95 targets (diagnosis, treatment, viral suppression)
-- 🧭 Inform strategic public health interventions and equitable resource distribution
+### Data Analysis Components
+- **Prevalence Analysis**: HIV prevalence by age, gender, county, and urban/rural classification
+- **Treatment Cascade**: Analysis of the 90-90-90 targets (testing, treatment, viral suppression)
+- **Geographic Mapping**: County-level and sub-county HIV indicators
+- **Trend Analysis**: Longitudinal patterns over multiple survey periods
+- **Risk Factor Assessment**: Behavioral and demographic risk factors
+- **Program Performance**: ART coverage, retention rates, and treatment outcomes
 
----
+### Visualization Capabilities
+- Interactive dashboard with multiple visualization types
+- Geographic heat maps for spatial analysis
+- Time series charts for trend analysis
+- Demographic breakdowns with cross-tabulations
+- Treatment cascade waterfall charts
+- Comparative analysis across different population groups
 
-## ❓ Research Questions This Platform Answers
+## Technology Stack
 
-1. **Geographic Disparities**  
-   _Which counties have the highest HIV burden, and why do these disparities exist?_
+- **Frontend**: React.js with interactive components
+- **Data Visualization**: Tableau (primary visualization engine)
+- **Data Processing**: Python/R for statistical analysis
+- **Database**: Structured data storage for processed datasets
+- **Deployment**: Web-based application hosted on cloud infrastructure
 
-2. **Treatment Access**  
-   _How effective is ART coverage across different regions and demographics?_
+## Data Processing Pipeline
 
-3. **Vulnerable Populations**  
-   _Who are the most at-risk groups, and how can we better serve them?_
+1. **Data Extraction**: Raw data collection from multiple sources
+2. **Data Cleaning**: Standardization, validation, and quality checks
+3. **Data Integration**: Merging datasets with common identifiers
+4. **Statistical Analysis**: Calculation of key indicators and confidence intervals
+5. **Visualization Preparation**: Data formatting for Tableau integration
+6. **Dashboard Deployment**: Publication of interactive visualizations
 
-4. **95-95-95 Progress**  
-   _How close is Kenya to achieving the UNAIDS 95-95-95 targets by 2030?_
+## Key Indicators Tracked
 
-5. **Future Projections**  
-   _What scenarios could lead to epidemic control, and what interventions are needed?_
+### Epidemiological Indicators
+- HIV prevalence (overall and by subgroups)
+- HIV incidence estimates
+- New HIV infections
+- AIDS-related mortality
+- Mother-to-child transmission rates
 
-6. **Policy Impact**  
-   _How can data-driven insights inform targeted interventions and resource allocation?_
+### Treatment and Care Indicators
+- Number of people living with HIV (PLHIV)
+- ART coverage
+- Viral load suppression rates
+- Treatment retention rates
+- Pre-exposure prophylaxis (PrEP) uptake
+
+### Testing and Prevention Indicators
+- HIV testing coverage
+- Knowledge of HIV status
+- Condom use rates
+- Medical male circumcision coverage
+- Prevention of mother-to-child transmission (PMTCT) coverage
+
+## Geographic Coverage
+
+The analysis covers all 47 counties in Kenya with the following administrative levels:
+- National level aggregates
+- County-level analysis
+- Sub-county breakdowns (where data availability permits)
+- Urban vs. rural classifications
+- Special focus on high-burden regions
+
+## Target Audience
+
+- **Policymakers**: Ministry of Health, NACC, county health departments
+- **Program Implementers**: NGOs, healthcare facilities, community organizations
+- **Researchers**: Academic institutions, research organizations
+- **Development Partners**: USAID, CDC, WHO, UNAIDS, bilateral donors
+- **Public Health Professionals**: Epidemiologists, public health practitioners
+
+## Data Quality and Limitations
+
+### Quality Assurance Measures
+- Systematic data cleaning and validation procedures
+- Cross-validation across multiple data sources
+- Statistical weighting for population representativeness
+- Confidence interval calculations for key estimates
+
+### Known Limitations
+- Survey data may have sampling biases
+- Facility-based data may not capture all populations
+- Some indicators have limited geographic granularity
+- Time lags in data availability may affect currency of estimates
+
+## Usage Guidelines
+
+### For Analysts
+- Review data dictionary before analysis
+- Apply appropriate statistical weights when available
+- Consider confidence intervals when interpreting results
+- Cross-reference findings with multiple data sources
+
+### For Visualization Users
+- Interactive dashboards allow filtering by multiple dimensions
+- Tableau visualizations provide drill-down capabilities
+- Export functionality available for presentations and reports
+- Mobile-responsive design for field use
+
+## Data Updates and Maintenance
+
+- **Update Frequency**: Quarterly updates when new data becomes available
+- **Version Control**: All datasets are versioned with change logs
+- **Quality Monitoring**: Regular data quality assessments
+- **Stakeholder Feedback**: Continuous improvement based on user input
+
+## Collaboration and Partnerships
+
+This project is developed in collaboration with:
+- Kenya Ministry of Health
+- National AIDS Control Council (NACC)
+- Kenya National Bureau of Statistics (KNBS)
+- International development partners
+- Academic research institutions
+
+## Contact Information
+
+For questions, feedback, or collaboration opportunities:
+- Project Lead: [joymanyara55@gmail.com]
+- Technical Support: [joymanyara55@gmail.com]
 
 
----
+## Acknowledgments
 
-## 📊 Tools & Technologies
+We acknowledge the contribution of all HIV-positive individuals who participated in surveys and provided data through healthcare facilities. This work is supported by various development partners committed to ending the HIV epidemic in Kenya.
 
-| Tool        | Purpose                                     |
-|-------------|---------------------------------------------|
-| Excel       | Data cleaning and aggregation               |
-| Python      | Data processing, analysis, geospatial maps  |
-| Tableau     | Dashboards and visual analytics             |
-| Lovable     | Online platform for sharing visualizations  |
+## License and Terms of Use
 
----
+This project uses public health data in accordance with national data sharing policies and international best practices for health data use. Please refer to individual data source terms of use for specific restrictions.
 
-## 💡 Key Visualizations
-
-- **📍 HIV Burden Map**: County-level PLHIV data visualized on an interactive map
-- **📈 ART Access Bars**: Coverage by age (children, adolescents, adults)
-- **🧒 Pediatric Treatment Gap**: ART access among children on treatment
-- **⚰️ HIV-Related Mortality**: Deaths segmented by age and county
-- **📊 95-95-95 Dashboard**: Progress tracker toward global HIV targets
-- **🏥 Health Facility Density**: Providers vs PLHIV population
-
----
-
-## 🧠 Stakeholder Impact
-
-| Stakeholder        | Value Gained |
-|--------------------|--------------|
-| **Ministry of Health** | Insights for equitable drug distribution and resource allocation |
-| **County Health Departments** | Localized data to improve ART coverage and outreach |
-| **NGOs and CBOs** | Targeted intervention planning for high-risk populations |
-| **Donor Agencies** | Evidence-based reporting on impact and funding gaps |
-| **Researchers** | Access to granular, structured HIV data for modeling and analysis |
-
----
-
-## 📦 Deliverables
-
-✅ Cleaned and geocoded dataset (adults & children on ART, deaths, coverage)  
-✅ County-level visualizations and national dashboard (Tableau / Lovable)  
-✅ Analytical report on HIV treatment gaps and policy recommendations  
-✅ Slide deck summarizing findings and strategic focus areas  
-
----
-
-## 📬 Contact
-
-For questions, feedback, or access to raw data:
-
-📧  Email : joymanyara55@gmail.com 
-🌐 [Project Dashboard Link]  
-🔗 [Lovable Project Page]
 
 ---
 
